@@ -11,10 +11,66 @@ Repurposed to drive second serial port on ESP32 microcontroller, USB port used f
 
 [Protocol Manual](./documents/ftp-62gdsl001.pdf)
 
-###Connections
+[Python library](https://github.com/python-escpos/python-escpos)
 
-| No.| Func|Note |
-|----|-----|-----|
+## Notification printing example programme
+
+[Notification Printer](./NotificationPrinter/notifications.py)
+
+### Sample output
+
+![Alt text](./images/SampleTickets.png)
+
+
+### Board connections
+
+Hardwired to 9 way serial socket for connection to PC
+
+![Alt text](./images/BoardConnections.png)
+
+
+##### Layout
+
+|a|b|
+|-|-|
+|1|5|
+|2|6|
+|3|7|
+|4|8|
+
+#### Wires
+
+|Pin#|Colour|
+|----|------|
+|1|red|
+|2|brown|
+|3|black|
+|4|orange|
+|5|red|
+|6|grey|
+|7|black|
+|8|mauve|
+
+#### 9 way D socket connections
+
+|Pin#|Wire|
+|----|----|
+|1|n/c|
+|2|brown|
+|3|orange|
+|4|n/c|
+|5|green|
+|6|n/c|
+|7|grey|
+|8|mauve|
+|9|n/c|
+
+#### Min DIN Connections
+
+![Alt text](./images/ConnectorView.png)
+
+| No.| Name|Func|
+|----|-----|----|
 |  1 | +ve | 24V |
 |  2 | CTS | In  |
 |  3 | RTS | Out |
@@ -24,7 +80,7 @@ Repurposed to drive second serial port on ESP32 microcontroller, USB port used f
 |  7 | TxD | Out |
 |  8 | -ve | gnd |
 
-![Alt text](./images/ConnectorView.png)
+
 
 ### DIP Switches
 
